@@ -15,7 +15,6 @@ ul {
   width: 100%;
   display: flex;
   list-style: none;
-  position: relative;
 }
 li {
   margin: 2rem;
@@ -29,8 +28,9 @@ li:hover {
   border: 1px solid white;
   border-radius: 10%;
   background-color: red;
-  position: absolute;
-  right: 10px;
+  /*position: absolute;
+  right: 10px;*/
+  margin-left: auto;
 }
 .warp-club {
   width: 100%;
