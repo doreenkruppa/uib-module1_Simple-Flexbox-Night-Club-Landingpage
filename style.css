@@ -14,10 +14,12 @@ header {
 ul {
   width: 100%;
   display: flex;
+  flex-direction: column;
   list-style: none;
 }
 li {
-  margin: 2rem;
+  text-align: center;
+  margin: 2rem auto;
   padding: 1rem;
 }
 li:hover {
@@ -28,7 +30,6 @@ li:hover {
   border: 1px solid white;
   border-radius: 10%;
   background-color: red;
-  margin-left: auto;
 }
 .warp-club {
   width: 100%;
@@ -51,10 +52,19 @@ img {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  writing-mode: vertical-lr;
+  writing-mode: vertical-rl;
 }
 .column2 {
   background-image: url(./assets/main.jpg);
   background-size: cover;
   background-position: center;
+}
+
+@media (min-width: 650px) {
+  ul {
+    flex-direction: row;
+  }
+  .right {
+    margin-left: auto;
+  }
 }
